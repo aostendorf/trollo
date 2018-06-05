@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-it 'this is my list' do
-  expect(FactoryBot.create(:list).name).to eq('MyList')
-  expect(FactoryBot.create(:list).priority).to eq('1')
-end
+describe List do
+  it 'has a title' do
+    expect(FactoryBot.create(:list).title).to eq('MyList')
+  end
 
-it 'this is my list1' do
-  expect(FactoryBot.create(:list).name).to eq('MyList1')
-  expect(FactoryBot.create(:list).priority).to eq('2')
+  it 'has a priority' do
+    expect(FactoryBot.create(:list).priority).to eq('1')
+  end
 end

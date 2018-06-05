@@ -1,0 +1,11 @@
+<h1><%= @ltask.id ? 'Edit Task' : 'Create Task' %></h1>
+<hr />
+<%= form_for [@task] do |f| %>
+  <%= f.label :item %>
+  <%= f.text_area :name, required: true, autofocus: true %>
+
+  <%= f.label :completed %>
+  <%= f.check_box :priority, autofocus: true %>
+
+  <%= f.submit %>
+<% end %>

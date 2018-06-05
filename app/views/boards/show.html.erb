@@ -1,0 +1,8 @@
+<h1><%= @board.title %></h1>
+<hr />
+<p>What would you like to do?</p>
+<%= link_to 'View Lists', board_lists_path(@board) %>
+<br />
+<%= link_to 'Edit Board', edit_board_path(@board) %>
+<br />
+<%= link_to 'Delete Board', @board, method: :delete %>

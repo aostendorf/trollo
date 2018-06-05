@@ -1,7 +1,8 @@
 require 'rails_helper'
 
-it 'this is my board' do
-  expect(FactoryBot.create(:board).name).to eq('MyBoard')
+describe Board do
+it 'has a title' do
+  expect(FactoryBot.create(:board).title).to eq("MyBoard")
 end
-
+end
 
