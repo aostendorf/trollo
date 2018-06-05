@@ -1,6 +1,5 @@
 class BoardsController < ApplicationController
     before_action :set_board, only: [:edit, :destroy, :update, :show]
-    
   
     def index
       @boards = Board.all

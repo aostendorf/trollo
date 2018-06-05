@@ -2,7 +2,7 @@
 <hr />
 <%= form_for [@board, @list] do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.text_field :title, required: true, autofocus: true %>
 
   <%= f.label :priority %>
   <%= f.number_field :priority, required: true, autofocus: true %>
