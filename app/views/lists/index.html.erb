@@ -1,5 +1,7 @@
-<h1><%= @board.title %></h1>
-<%= link_to 'Add List to Board', new_board_list_path([@board, @list]) %>
-<%= link_to 'Edit List', edit_list_path([@board, @list]) %>
-<%= link_to 'Delete List', [@board, @list], method: :delete %>
-<%= link_to 'Back To Boards', board_lists_path(@board) %>
+<h1>Click a List To View Content</h1>
+<%= link_to 'Create a new list', new_board_list_path(@board) %>
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= link_to list.title, [@board, list] %></li>
+  <% end %>
+</ul>

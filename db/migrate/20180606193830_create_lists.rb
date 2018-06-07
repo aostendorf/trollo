@@ -3,6 +3,7 @@ class CreateLists < ActiveRecord::Migration[5.2]
     create_table :lists do |t|
       t.string :title
       t.integer :priority
+      t.belongs_to :board, foreign_key: true
 
       t.timestamps
     end

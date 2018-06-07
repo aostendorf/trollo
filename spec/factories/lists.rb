@@ -1,7 +1,7 @@
 FactoryBot.define do
-  factory :list, class: List do
-    title "MyList"
-    priority 1
-    task
+  factory :list do
+    title "MyString"
+    priority "MyString"
+    board nil
   end
 end

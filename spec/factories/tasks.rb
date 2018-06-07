@@ -1,6 +1,8 @@
 FactoryBot.define do
-  factory :task, class: Task do
-    item "MyTask"
+  factory :task do
+    title "MyString"
+    body "MyText"
     completed false
+    list nil
   end
 end

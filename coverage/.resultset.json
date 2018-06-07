@@ -223,7 +223,6 @@
       "/Users/AmberOstendorf/DevPointCourse/trollo/app/models/board.rb": [
         1,
         1,
-        1,
         null
       ],
       "/Users/AmberOstendorf/DevPointCourse/trollo/app/models/application_record.rb": [
@@ -241,7 +240,6 @@
         null
       ],
       "/Users/AmberOstendorf/DevPointCourse/trollo/app/models/list.rb": [
-        1,
         1,
         1,
         1,
@@ -304,18 +302,20 @@
         null,
         1,
         0,
+        0,
         null,
         null,
         1,
+        0,
         null,
         null,
         1,
         4,
         null,
         4,
-        2,
+        4,
         null,
-        2,
+        0,
         null,
         null,
         null,
@@ -601,6 +601,6 @@
         null
       ]
     },
-    "timestamp": 1528234127
+    "timestamp": 1528241568
   }
 }

@@ -4,5 +4,4 @@
   <% @boards.each do |board| %>
     <li><%= link_to board.title, board %></li>
   <% end %>
-  <%= link_to 'Add List', new_board_list_path([@board, @list]) %>
 </ul>

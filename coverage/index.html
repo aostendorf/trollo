@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,18 +14,18 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T15:28:47-06:00">2018-06-05T15:28:47-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T17:32:48-06:00">2018-06-05T17:32:48-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">80.1%</span></span>
+    (<span class="covered_percent"><span class="red">78.64%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.86
+         0.85
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>40</b> files in total.
     <b>206</b> relevant lines. 
-    <span class="green"><b>165</b> lines covered</span> and
-    <span class="red"><b>41</b> lines missed </span>
+    <span class="green"><b>162</b> lines covered</span> and
+    <span class="red"><b>44</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#973f3f82c4400c5fd516ecb62e93224d2783e385" class="src_link" title="app/controllers/boards_controller.rb">app/controllers/boards_controller.rb</a></td>
-        <td class="red strong">68.0 %</td>
-        <td>50</td>
-        <td>25</td>
-        <td>17</td>
-        <td>8</td>
-        <td>1.1</td>
+        <td class="red strong">59.26 %</td>
+        <td>52</td>
+        <td>27</td>
+        <td>16</td>
+        <td>11</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -143,9 +143,9 @@
       <tr>
         <td class="strong"><a href="#ec5f5cf4455f9d9cfdbc312225bd9b94f5f8f9d7" class="src_link" title="app/models/board.rb">app/models/board.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
         <td>3</td>
-        <td>3</td>
+        <td>2</td>
+        <td>2</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -153,9 +153,9 @@
       <tr>
         <td class="strong"><a href="#e94bb71fe0e7f4e9e77ccbec83c97c9823fc267b" class="src_link" title="app/models/list.rb">app/models/list.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
         <td>4</td>
-        <td>4</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -500,11 +500,11 @@
         <div class="source_table" id="973f3f82c4400c5fd516ecb62e93224d2783e385">
   <div class="header">
     <h3>app/controllers/boards_controller.rb</h3>
-    <h4><span class="red">68.0 %</span> covered</h4>
+    <h4><span class="red">59.26 %</span> covered</h4>
     <div>
-      <b>25</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <b>27</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>11</b> lines missed.</span>
     </div>
   </div>
   
@@ -520,7 +520,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">    before_action :set_board, only: [:show, :update, :edit, :destroy]</code>
+          <code class="ruby">    before_action :set_board, only: [:edit, :destroy, :update, :show]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -583,229 +583,241 @@
           <code class="ruby">      @board = Board.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="missed" data-hits="0" data-linenumber="13">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      render partial: &quot;form&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">    def edit</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">      render partial: &quot;form&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">    def create</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="19">
+        <li class="covered" data-hits="4" data-linenumber="21">
           <span class="hits">4</span>
           
           <code class="ruby">      @board = Board.new(board_params)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">      </code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="21">
+        <li class="covered" data-hits="4" data-linenumber="23">
           <span class="hits">4</span>
           
           <code class="ruby">      if @board.save</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="24">
+          <span class="hits">4</span>
           
           <code class="ruby">        redirect_to boards_path</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="24">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        render :new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">      else</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="missed" data-hits="0" data-linenumber="26">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">        render :new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
           <code class="ruby">    def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="29">
+        <li class="missed" data-hits="0" data-linenumber="31">
           
           
           <code class="ruby">      if @board.update(board_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
+        <li class="missed" data-hits="0" data-linenumber="32">
           
           
           <code class="ruby">        redirect_to @board</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">      else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
+        <li class="missed" data-hits="0" data-linenumber="34">
           
           
           <code class="ruby">        render :edit</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
           <code class="ruby">    def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
+        <li class="missed" data-hits="0" data-linenumber="39">
           
           
           <code class="ruby">      @board.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
+        <li class="missed" data-hits="0" data-linenumber="40">
           
           
           <code class="ruby">      redirect_to boards_path</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="41">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    private</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">      </code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
+          <code class="ruby">    private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
           <code class="ruby">      def set_board</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
+        <li class="missed" data-hits="0" data-linenumber="46">
           
           
           <code class="ruby">        @board = Board.find(params[:id])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
           <code class="ruby">      def board_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="48">
+        <li class="covered" data-hits="4" data-linenumber="50">
           <span class="hits">4</span>
           
           <code class="ruby">        params.require(:board).permit(:title)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">  end</code>
@@ -839,331 +851,331 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_action :set_board</code>
+          <code class="ruby">    before_action :set_board</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_action :set_list, only: [:show, :edit, :update, :destroy]</code>
+          <code class="ruby">    before_action :set_list, only: [:show, :edit, :update, :destroy]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  def index</code>
+          <code class="ruby">    def index</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="6">
           
           
-          <code class="ruby">    @lists = @board.lists</code>
+          <code class="ruby">      @lists = @board.lists</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">  def show</code>
+          <code class="ruby">    def show</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">  def new</code>
+          <code class="ruby">    def new</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="13">
           
           
-          <code class="ruby">    @list = @board.lists.new</code>
+          <code class="ruby">      @list = @board.lists.new</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="14">
           
           
-          <code class="ruby">    render partial: &quot;form&quot;</code>
+          <code class="ruby">      render partial: &quot;form&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">  def edit</code>
+          <code class="ruby">    def edit</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="18">
           
           
-          <code class="ruby">    render partial: &quot;form&quot;</code>
+          <code class="ruby">      render partial: &quot;form&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create</code>
+          <code class="ruby">    def create</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="22">
           
           
-          <code class="ruby">    @list = @board.lists.new(list_params)</code>
+          <code class="ruby">      @list = @board.lists.new(list_params)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="24">
           
           
-          <code class="ruby">    if @list.save</code>
+          <code class="ruby">      if @list.save</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="25">
           
           
-          <code class="ruby">      redirect_to [@board, @list]</code>
+          <code class="ruby">        redirect_to [@board, @list]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">    else</code>
+          <code class="ruby">      else</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">      render :new</code>
+          <code class="ruby">        render :new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">  def update</code>
+          <code class="ruby">    def update</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="32">
           
           
-          <code class="ruby">    if @list.update(list_params)</code>
+          <code class="ruby">      if @list.update(list_params)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="33">
           
           
-          <code class="ruby">      redirect_to [@board, @list]</code>
+          <code class="ruby">        redirect_to [@board, @list]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">    else</code>
+          <code class="ruby">      else</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="35">
           
           
-          <code class="ruby">      render :edit</code>
+          <code class="ruby">        render :edit</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">  def destroy</code>
+          <code class="ruby">    def destroy</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="40">
           
           
-          <code class="ruby">    @list.destroy</code>
+          <code class="ruby">      @list.destroy</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="41">
           
           
-          <code class="ruby">    redirect_to board_lists_path</code>
+          <code class="ruby">      redirect_to board_lists_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">    private</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
-          <code class="ruby">    def set_board</code>
+          <code class="ruby">      def set_board</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">      @board = Board.find(params[:board_id])</code>
+          <code class="ruby">        @board = Board.find(params[:board_id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">    def set_list</code>
+          <code class="ruby">      def set_list</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="50">
           
           
-          <code class="ruby">      @list = List.find(params[:id])</code>
+          <code class="ruby">        @list = List.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">    def list_params</code>
+          <code class="ruby">      def list_params</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="54">
           
           
-          <code class="ruby">      params.require(:list).permit(:title, :priority)</code>
+          <code class="ruby">        params.require(:list).permit(:title, :priority)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
         </li>
       
     </ol>
@@ -1266,7 +1278,7 @@
         <li class="missed" data-hits="0" data-linenumber="14">
           
           
-          <code class="ruby">      render partial: &quot;form&quot;</code>
+          <code class="ruby">      render :form</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -1290,7 +1302,7 @@
         <li class="missed" data-hits="0" data-linenumber="18">
           
           
-          <code class="ruby">      render partial: &quot;form&quot;</code>
+          <code class="ruby">      render :form</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
@@ -1692,8 +1704,8 @@
     <h3>app/models/board.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1713,13 +1725,7 @@
           <code class="ruby">  has_many :lists, dependent: :destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  validates_presence_of :title, presence: true</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby">end</code>
@@ -1735,8 +1741,8 @@
     <h3>app/models/list.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1762,13 +1768,7 @@
           <code class="ruby">  has_many :tasks, dependent: :destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  validates_presence_of :title, :priority, presence: true</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">end</code>
